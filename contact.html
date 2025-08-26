@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Edgera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="logo">Edgera</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p class="page-subtitle">Ready to explore a partnership? We'd love to hear about your business and discuss how we can create value together.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Let's Start a Conversation</h2>
+                        <p>Whether you're a business owner considering a sale, an advisor with a client opportunity, or simply want to learn more about our approach, we welcome the discussion.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h3>Email</h3>
+                                <a href="mailto:hello@edgera.com">hello@edgera.com</a>
+                            </div>
+                        </div>
+
+                        <div class="ideal-opportunities">
+                            <h3>Ideal Opportunities</h3>
+                            <ul>
+                                <li>Profitable businesses with $2M-$50M in revenue</li>
+                                <li>Established operations (5+ years)</li>
+                                <li>Strong market position and recurring revenue</li>
+                                <li>Growth potential through operational improvements</li>
+                                <li>Owner ready for transition or partnership</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                            <h3>Send us a message</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="business-for-sale">Business for Sale</option>
+                                    <option value="partnership-opportunity">Partnership Opportunity</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                    <option value="advisor-referral">Advisor Referral</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell us about your business, opportunity, or inquiry..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2>Our Process</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <h3>1. Initial Discussion</h3>
+                        <p>We start with a confidential conversation to understand your business and goals.</p>
+                    </div>
+                    <div class="step">
+                        <h3>2. Evaluation</h3>
+                        <p>If there's mutual interest, we conduct a thorough business evaluation and due diligence.</p>
+                    </div>
+                    <div class="step">
+                        <h3>3. Partnership</h3>
+                        <p>We structure a deal that works for all parties and begin our value creation journey together.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Edgera. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .page-header {
+            background: #f8f9fa;
+            padding: 120px 20px 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .page-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-section {
+            padding: 80px 20px;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .contact-methods {
+            margin-bottom: 50px;
+        }
+
+        .contact-method {
+            margin-bottom: 20px;
+        }
+
+        .contact-method h3 {
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .contact-method a {
+            color: #000;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .contact-method a:hover {
+            text-decoration: underline;
+        }
+
+        .ideal-opportunities h3 {
+            font-size: 22px;
+            color: #000;
+            margin-bottom: 15px;
+        }
+
+        .ideal-opportunities ul {
+            list-style: none;
+        }
+
+        .ideal-opportunities li {
+            padding: 8px 0;
+            color: #666;
+        }
+
+        .ideal-opportunities li:before {
+            content: "✓ ";
+            color: #000;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .contact-form-container {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .contact-form h3 {
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            background: #fff;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #000;
+        }
+
+        .submit-button {
+            background: #000;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-button:hover {
+            background: #333;
+        }
+
+        .process-section {
+            background: #f8f9fa;
+            padding: 80px 20px;
+        }
+
+        .process-section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 60px;
+            color: #000;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .step p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            
+            .contact-form-container {
+                padding: 30px 20px;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
