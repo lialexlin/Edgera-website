@@ -13,7 +13,6 @@
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
@@ -54,40 +53,55 @@
                     </div>
 
                     <div class="contact-form-container">
-                        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                             <h3>Send us a message</h3>
-                            
+
+                            <!-- Web3Forms Access Key - Replace YOUR_ACCESS_KEY with actual key from web3forms.com -->
+                            <input type="hidden" name="access_key" value="74fb5d9f-b7a6-4bf5-a97c-1df8999e2aaf">
+
+                            <!-- Redirect to thank you page (optional) -->
+                            <input type="hidden" name="redirect" value="https://edgera.com/thank-you.html">
+
+                            <!-- Recipient email -->
+                            <input type="hidden" name="email" value="jett@edgerapartners.com">
+
+                            <!-- Email subject line -->
+                            <input type="hidden" name="subject" value="New Contact Form Submission from Edgera Website">
+
                             <div class="form-group">
                                 <label for="name">Name *</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
-                            
+
                             <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
+                                <label for="from_email">Email *</label>
+                                <input type="email" id="from_email" name="from_email" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="company">Company</label>
                                 <input type="text" id="company" name="company">
                             </div>
-                            
+
                             <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
+                                <label for="inquiry_type">Subject *</label>
+                                <select id="inquiry_type" name="inquiry_type" required>
                                     <option value="">Select a topic</option>
-                                    <option value="business-for-sale">Business for Sale</option>
-                                    <option value="partnership-opportunity">Partnership Opportunity</option>
-                                    <option value="general-inquiry">General Inquiry</option>
-                                    <option value="advisor-referral">Advisor Referral</option>
+                                    <option value="Business for Sale">Business for Sale</option>
+                                    <option value="Partnership Opportunity">Partnership Opportunity</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Advisor Referral">Advisor Referral</option>
                                 </select>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="message">Message *</label>
                                 <textarea id="message" name="message" rows="6" required placeholder="Tell us about your business, opportunity, or inquiry..."></textarea>
                             </div>
-                            
+
+                            <!-- Honeypot spam protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                             <button type="submit" class="submit-button">Send Message</button>
                         </form>
                     </div>
